@@ -1,0 +1,31 @@
+$color: rgb(87, 152, 250);
+
+h2 {
+    color: $color;
+}
+
+div {
+    td {
+        color: rgb(134, 161, 250);
+    }
+}
+
+%cardType {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.succ {
+    @extend %cardType;
+    background-color: rgb(110, 216, 110);
+}
+
+.warn {
+    @extend %cardType;
+    background-color: rgb(236, 236, 119);
+}
+
+.err {
+    @extend %cardType;
+    background-color: rgb(238, 113, 113);
+}

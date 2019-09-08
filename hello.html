@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Webpage </title>
+
+        <!--prevent webpages having tiny text when viewed on mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="test_style.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="sassStyle.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!--Font Awesome CDN-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+        <div id="mainContainer" class="container col-lg-8 col-md-10 col-sm-12">
+            <h1> Corporate Ladder </h1>
+            <h2>What is the Corporate Ladder?</h2>
+            <p class="paragraph">The corporate ladder is something that you climb to increase your own
+                prestige as well as income. Sometimes hard work by itself is not enough
+                to climb the ladder but it is definitely the foundation to success.
+                We will talk in detail in the following paragraphs howw to succeed.
+            </p>
+            <br>
+            <div class="succ">To succeed</div>
+            <div class="warn">You must have</div>
+            <div class="err" style="margin-bottom: 5%">These 4 qualities:</div>
+            <br>
+            <a href="#HardWord">Hard Work</a>
+            <a href="#SocialSkills">Social Skills</a>
+            <a href="#OutsideLearning">Outside Learning</a>
+            <a href="#Quitting">When to Quit</a>
+            <br>
+
+            <div id="tableDiv">
+            <table>
+                <tr>
+                    <th>Number</th>
+                    <th>Action</th>
+                    <th>Percentage of Importance</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hard Work</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Social Skills</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Learn Outside of Work</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Know When to Quit</td>
+                    <td>15%</td>
+                </tr>
+            </table>
+            </div>
+
+            <br>
+            <h2 id="HardWork">Hard Work</h2>
+            <p>Hard work is the foundation of success and for good reason.</p>
+            <br>
+            <h2 id="SocialSkills">Social Skills</h2>
+            <p>Social skills are a very important part of succeeding in the workplace</p>
+            <br>
+            <h2 id="OutsideLearning">Outside Learning</h2>
+            <p>For the fastest success, you have to invest time outside of work for self learning.
+                For instance, if you are learning fonrt end web development then you might
+                want to keep up with new frameworks as well as explore business logic middleware 
+                and backend frameworks to extend your own skill, e.g.:
+            </p>
+            <ol>
+                <li>Front End
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue</li>
+                    </ul>
+                </li>
+                <li>Backend
+                    <ul>
+                        <li>Java Spring</li>
+                        <li>Node.js</li>
+                        <li>Laravel</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2 id="Quitting">Quitting</h2>
+            <p>When to leave the current job? It is an essential question because you don't want to overstay
+                your welcome or leave youself in an uncomfortable position
+            </p>
+
+            <br>
+            <p class="computerOnly" style="margin:10%">Easter Egg: this will only show up on PCs and not when you 
+                print the page! That's a media query, you can check on print preview in browser!</p>
+        
+            <div id="formDiv">
+                <h2>What Do You think is the most important trait to success?</h2>
+                <form id="questionForm">
+                    <input name="trait" type="text" placeholder="Trait">
+                    <br>
+                    <br>
+                    <label for="recommend">Would You Recommend This Article?</label>
+                    <input name="recommend" list="reqs" placeholder="Select One">
+                    <datalist id="reqs">
+                        <option value="YES! This article blew my pants off">
+                        <option value="Yes, this was a good read">
+                        <option value="Meh, this has been a mediocre experience">
+                        <option value="Nah man, this was aight">
+                        <option value="Ima need some eye bleach after reading this, homes">
+                    </datalist>
+                    <br>
+                    <label for="rating">Please Rate This Article</label>
+                    <input name="rating" type="number">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div id="infoCards">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Writer</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Jack Lagall</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Editor</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Jack Lagall</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                    </div>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Stylist</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Jack Lagall</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href=#> RandomLink.com</a>
+            </div>
+            <!-- Copyright -->
+            
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+h1 {
+    color: blue;
+    margin: 4%;
+    padding: 4%;
+}
+
+h2::selection {
+    color: teal;
+}
+
+.testClass {
+    background-color: teal;
+}
+
+#mainContainer {
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    font-size: 25px;
+}
+
+p:hover {
+    background-color: rgb(251, 251, 251);
+}
+
+p::before {
+    content: "> ";
+    font-weight: bold;
+}
+
+#tableDiv {
+    margin: 5%;
+}
+
+tr {
+    font-size: 25px;
+}
+
+a {
+    font-size: 20px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formDiv {
+    margin: 5%;
+}
+
+ul > li {
+    color: green;
+}
+
+@media print {
+    .computerOnly {
+        /*paragrah wwon't show up when printing the page*/
+        display: none;
+    }
+}
+
+/*screen so that won't show up when printed*/
+@media screen and (min-width: 500px) {
+    #mainContainer {
+        background-color: rgb(209, 231, 250);
+    }
+    h1::after {
+        content: ": What it Takes to Succeed and How to Do so"
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #mainContainer {
+        background-color: rgb(119, 163, 228);
+    }
+    h1::after {
+        content: ": Keys to Success"
+    }
+}
+
+#infoCards {
+    background-color: rgb(193, 226, 248);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.card {
+    margin: auto;
+}

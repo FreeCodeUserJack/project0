@@ -1,0 +1,26 @@
+h2 {
+  color: #5798fa;
+}
+
+div td {
+  color: #86a1fa;
+}
+
+.err, .warn, .succ {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.succ {
+  background-color: #6ed86e;
+}
+
+.warn {
+  background-color: #ecec77;
+}
+
+.err {
+  background-color: #ee7171;
+}
+
+/*# sourceMappingURL=sassStyle.css.map */
